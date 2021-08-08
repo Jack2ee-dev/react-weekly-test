@@ -1,0 +1,53 @@
+.stepper {
+  padding: 20px 30px;
+  box-shadow: 0px 0px 10px rgba(148, 192, 202, 0.2), 0px 4px 3px rgba(1, 126, 155, 0.1);
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.stepper.horizontal {
+  min-width: 200px;
+}
+
+.stepper.vertical {
+  min-height: 200px;
+  flex-direction: column;
+}
+
+.button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button.horizontal.decrease {
+  order: 1;
+}
+
+.button.horizontal.increase {
+  transform: rotate(180deg);
+  order: 3;
+}
+
+.current {
+  order: 2;
+  font-size: 40px;
+  color: var(--cyan);
+  font-weight: 700;
+}
+
+.button.vertical.increase {
+  transform: rotate(90deg);
+  order: 1;
+}
+
+.button.vertical.decrease {
+  transform: rotate(-90deg);
+  order: 3;
+}
